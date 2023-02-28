@@ -4,8 +4,7 @@ services:
     build:
       context: ./saiBtc
       dockerfile: Dockerfile
-    ports:
-      - "3305:3305"
+    network_mode: host
     volumes:
       - ./saiBtc/build/saibtc.config:/srv/saibtc.config
 
@@ -13,22 +12,16 @@ services:
     build:
       context: ./saiStorage
       dockerfile: Dockerfile
-    ports:
-      - "27017:27017"
-      - "8801:8801"
-      - "8802:8802"
+    network_mode: host
     volumes:
       - ./saiStorage/build/config.json:/srv/config.json
-#      - /root/storage_data:/data/db
+  #      - /root/storage_data:/data/db
 
   sai-bft:
     build:
       context: ./saiBft
       dockerfile: Dockerfile
-    ports:
-      - "8017:8017"
-      - "8018:8018"
-      - "8019:8019"
+    network_mode: host
     depends_on:
       - sai-btc
       - sai-p2p
@@ -42,8 +35,7 @@ services:
     build:
       context: ./saiP2pProxy
       dockerfile: Dockerfile
-    ports:
-      - "8071:8071"
+    network_mode: host
     volumes:
       - ./saiP2pProxy/build/config.yml:/srv/config.yml
 
@@ -51,8 +43,7 @@ services:
     build:
       context: ./saiP2p
       dockerfile: Dockerfile
-    ports:
-      - "8112:8112"
+    network_mode: host
     volumes:
       - ./saiP2p/build/p2p_lin64.properties:/srv/p2p_lin64.properties
 
@@ -60,9 +51,6 @@ services:
     build:
       context: ./saiVM1
       dockerfile: Dockerfile
-    ports:
-      - "8009:8009"
-      - "8089:8089"
-      - "8099:8099"
+    network_mode: host
     volumes:
       - ./saiVM1/build/config.yml:/srv/config.yml
