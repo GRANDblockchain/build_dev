@@ -1,0 +1,5 @@
+2023-04-09T22:39:00.256Z	DEBUG	sai!service@v0.0.0-20221208173505-61ff68417596/service.go:149	Logger started	{"mode": "debug"}
+2023/04/09 22:39:00 sai_VM1 has been started!
+2023/04/09 22:39:00 Socket server has been started: 8009
+2023/04/09 22:39:00 WS server has been started: 8099
+2023/04/09 22:39:00 Http server has been started: 8089
