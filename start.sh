@@ -30,6 +30,8 @@ then
   echo "Done"
 fi
 
+sleep 3
+
 echo "Starting the p2p"
 if [ -f "$p2p_d/$p2p_f" ]
 then
