@@ -4,7 +4,7 @@ set +x
 cd microservices
 
 killall p2p_lin64
-#killall sai-p2p
+killall sai-p2p
 killall sai-btc
 killall sai-vm1
 killall sai-bft
