@@ -2,7 +2,7 @@ proxy_host: "0.0.0.0"
 proxy_port: "8071"
 bft_http_host: "localhost"
 bft_http_port: "8018"
-p2p_host: "18.195.136.189"
+p2p_host: "x.x.x.x"
 p2p_port: "9970"
 blacklist: ["18.218.186.169:9971"]
 storage_url: "http://localhost:8801"
