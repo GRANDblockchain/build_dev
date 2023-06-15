@@ -15,7 +15,7 @@
   storage_email: "ddd@mial.com"
   storage_password: "fdfsdf"
   saiBTC_address: "http://localhost:3305"
-  saiP2P_address: "http://x.x.x.x:9970"
+  saiP2P_address: "http://18.195.136.189:9970"
   saiVM1_address: "http://localhost:8089"
   log_mode: "debug"
   saiProxy_address: "http://localhost:8071"
